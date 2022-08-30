@@ -9,8 +9,7 @@ export async function getTasks() {
 }
 
 export async function updateTask(taskId, task) {
-  console.log(task);
-  console.log(taskId);
+
   return await api
     .put("/tasks", task, {
       params: {
